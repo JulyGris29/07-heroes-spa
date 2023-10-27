@@ -13,17 +13,18 @@ export const LoginPage = () => {
     const lastPath = localStorage.getItem('lastPath')|| '/';
     login( 'Julian Grisales ');
 
-    navigate (lastPath, { 
+    navigate ( lastPath, { 
     replacle: true
   });
   }
   return (
     <div className="container mt-5">
       <h1>Login</h1>
-      <hr/>
+      <hr />
 
-      <button className="btn btn-primary"
-      onClick={ onLogin }
+      <button 
+        className="btn btn-primary"
+        onClick={ onLogin }
       >
         Login
       </button>
